@@ -1,0 +1,231 @@
+
+  .logo {
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+  }
+  
+  .logo-text {
+      display: block;
+  }
+  
+  
+  .logo {
+      text-align: center;
+      margin-top: 50px;
+  }
+  
+  .logo-text:first-child {
+      color: #009688; 
+  }
+  
+  .logo-text:last-child {
+      color: #FF5722; 
+  }
+  
+  a{
+    text-decoration: none;
+}
+
+  h3{
+  display: flex;
+  justify-content: center;
+  color:#009688 ;
+  margin: 20px 0px 0px 140px;
+  }
+
+
+.circulo{
+    width: 300px;
+    height: 300px;
+    
+}
+
+.text_circulo{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    
+
+    flex-direction: column
+   
+
+}
+
+.circuloo{
+    display: flex;
+    flex-direction:row-reverse;
+    margin: 80px 500px 0px ;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 35%;  
+}
+
+form [type="submit"] {
+    height: 50px;
+    width: 50%;
+    margin-top: 15px;
+    margin-left: 40px;
+    border-radius: 20px;
+    
+    
+}
+form [type="text"]{
+    height: 50px;
+    width: 50%;
+     background-color: #aac5aa;
+}
+input {
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+button[id="exemplo"]{
+    background-color: #FF5722;
+}
+
+.form-group{
+    display: flex;
+    align-items: center;
+}
+p{
+    display: flex;
+    margin-top: 20px;
+  
+    justify-content: center;
+}
+
+.formulario{
+    display: flex;
+    margin-top: -400px;
+    margin-left: 10px;
+    margin-bottom: 150px;
+}
+
+
+.cubo{
+    width: 300px;
+    height: 300px;
+}
+
+.text_cubo{
+    display: flex;
+    justify-content: center;
+     flex-direction: column;
+     margin-top: 40px;
+}
+
+.cuboo{
+    display: flex;
+    flex-direction:row-reverse;
+    margin: 80px 500px 0px ;
+}
+
+.retangulo{
+    width: 400px;
+    height: 300px;
+}
+
+.text_retangulo{
+    display: flex;
+    justify-content: center;
+     flex-direction: column;
+}
+.retanguloo{
+    display: flex;
+    flex-direction:row-reverse;
+    margin: 80px 500px 0px ;
+}
+
+.romboedro{
+    width: 400px;
+    height: 300px;
+}
+
+.text_romboedro{
+    display: flex;
+    justify-content: center;
+     flex-direction: column;
+}
+
+.romboedroo{
+    display: flex;
+    flex-direction:row-reverse;
+    margin: 80px 500px 0px ;
+}
+
+.poligono{
+    width: 400px;
+    height: 300px;
+}
+.text_poligono{
+    display: flex;
+    justify-content: center;
+     flex-direction: column;
+}
+
+.poligonoo{
+    display: flex;
+    flex-direction:row-reverse;
+    margin: 80px 500px 0px ;
+}
+
+.quadrado{
+    width: 250px;
+    height: 250px;
+}
+
+.text_quadrado{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+     flex-direction: column;
+}
+
+.quadradoo{
+    display: flex;
+    flex-direction:row-reverse;
+    margin: 80px 500px 0px ;
+}
+
+.trapezoide{
+    width: 400px;
+    height: 400px;
+}
+.text_trapezoide{
+    display: flex;
+    justify-content: center;
+     flex-direction: column;
+}
+
+.trapezoidee{
+    display: flex;
+    flex-direction:row-reverse;
+    margin: 80px 500px 0px ;
+}
+
+
+.botao{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 500px;
+    font-size: 25px;
+    color: #FF5722;
+    
+}
+
+a{
+    color: #FF5722;
+    border: 10px 10px 10px 10px;
+    border-color: #333;
+}

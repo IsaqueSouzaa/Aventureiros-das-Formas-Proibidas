@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventureiros das Formas Proibidas</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+     <header>
+        
+        <div class="logo">
+            <span class="logo-text">Calculador</span>
+            <span class="logo-text">de Área</span>
+        </div>
+    
+        <div class="botao"> <a href="index.html"> Início </a> </div>
+        
+    </header> 
+       
+    
+    <main>
+        <div class="retanguloo">
+        
+            <img class="retangulo" src="img/retangulo.jpg" alt="">
+        </div>
+
+        <div class="formulario">
+            <form>
+                <div class="form-group">
+                    <label for="base">Base:</label>
+                    <input type="text" name="base" id="base" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for=" altura">Altura:</label>
+                    <input type="text" name="altura" id="altura" class="form-control">
+                </div>
+    
+                <div class="form-group mt-2">
+                    <button type="submit" id="submit" class="btn btn-primary">Calcular</button>
+    
+                  
+                </div>
+                <div class="form-group mt-2">
+                    <label for="area">Área:</label>
+                    <input type="text" name="area" id="area" class="form-control" disabled>
+                    <p id="resultado"></p>
+                </div>
+            </form>
+        
+        </div>
+
+       <div class="text_retangulo"></div>
+       
+        <p>
+           
+            Um retângulo é uma forma bidimensional com quatro lados, onde cada ângulo interno é um ângulo reto (90 graus). Os lados opostos de um retângulo têm o mesmo comprimento e são paralelos entre si. Visualmente, pense em um pedaço de papel retangular, como uma folha de papel A4. Ele tem dois lados longos e dois lados curtos, e os cantos são todos perpendiculares (formando ângulos retos). Os retângulos são muito comuns em muitas situações do dia a dia, desde o formato de janelas até o design de muitos objetos e estruturas. 
+        
+        </p>
+        
+            <p>     
+            Para calcular a área de um retângulo, você só precisa saber o comprimento da base e a altura.
+        </p>   
+            
+        <p>
+            A fórmula para calcular a área de um retângulo é:
+        </p>
+            
+        <p>
+            Área do retângulo = Base x Altura
+        </p>
+            
+        <p>
+            Onde:
+        </p>
+            
+        <p>
+            Base é o comprimento de um dos lados mais longos do retângulo.
+            Altura é a distância vertical entre a base e o lado oposto.
+            Então, para encontrar a área total do retângulo, você multiplica o comprimento da base pela altura.
+        </p>
+
+            <p>
+            Por exemplo, se a base do retângulo for 5 unidades e a altura for 3 unidades, a área seria:
+        </p>
+
+            <p>
+            Área do retângulo = 5 x 3
+            Área do retângulo = 15
+        </p>
+
+            <p>
+            Portanto, a área total do retângulo seria 15 unidades quadradas.
+        </p>
+            
+   <script> 
+                // Exemplo de função em javascript chamada por um evento
+                document.getElementById('submit').addEventListener('click', function (event) {
+                event.preventDefault();
+                calcularAreaRetangulo();
+            });
+
+             // Função para calcular a área do retângulo
+             function calcularAreaRetangulo() {
+                let base = document.getElementById('base').value;
+                let altura = document.getElementById('altura').value;
+                let area = base * altura;
+                document.getElementById('area').value = area;
+                document.getElementById('resultado').innerText = `A área do retângulo é ${area}`;
+            }
+           
+</script>
+   
+   
+   
+   
+    </main>
+</body>
+</html>

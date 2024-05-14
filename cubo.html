@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventureiros das Formas Proibidas</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+     <header>
+        
+        <div class="logo">
+            <span class="logo-text">Calculador</span>
+            <span class="logo-text">de Área</span>
+        </div>
+    
+        <div class="botao"> <a href="index.html"> Início </a> </div>
+   
+    </header> 
+       
+    
+    <main>
+        <div class="cuboo">
+       
+            <img class="cubo" src="img/92c485a12e2ed352491ae615fb945471.jpg" alt="">
+        </div>
+
+
+        <div class="formulario">
+            <form>
+                <div class="form-group">
+                    <label for=" lado">Lado:</label>
+                    <input type="text" name="lado" id="lado" class="form-control">
+                </div>
+    
+                <div class="form-group mt-2">
+                    <button type="submit" id="submit" class="btn btn-primary">Calcular</button>
+    
+                </div>
+                <div class="form-group mt-2">
+                    <label for="area">Área:</label>
+                    <input type="text" name="area" id="area" class="form-control" disabled>
+                    <p id="resultado"></p>
+                </div>
+            </form>
+        </div>
+
+                
+        <div class="text_cubo"> 
+          
+            <p>
+                Um cubo é uma forma tridimensional que se parece com uma caixa. Todas as suas seis faces são quadrados e têm exatamente o mesmo tamanho. Imagine uma caixa de presente onde todos os lados são do mesmo tamanho e formato. Cada vértice do cubo é onde três dessas faces se encontram. Dentro do cubo, há espaço, assim como dentro de uma caixa vazia. Para visualizar melhor, pense em um dado de seis lados - cada lado é um quadrado e quando você o junta, forma um cubo.
+            
+            </p>
+            
+            <p>
+                Para calcular a área de um cubo, você precisa saber o comprimento de um dos lados.
+            </p>
+            
+            <p>
+                A fórmula para a área de um dos lados do cubo é:
+            </p>
+            
+            <p>
+                Área do lado do cubo = Lado x Lado
+            </p>
+            
+            <p>
+                Como um cubo tem seis lados iguais, a área total do cubo é o resultado dessa fórmula multiplicado por seis:
+            </p>
+            
+            <p>
+                Área total do cubo = 6 x (Lado x Lado)
+            </p>
+            
+            <p>
+                Então, para calcular a área total do cubo, você multiplica o comprimento de um lado por ele mesmo (para obter a área de uma face) e, em seguida, multiplica esse resultado por seis.
+            </p>
+            
+            <p>
+                Por exemplo, se o comprimento de um lado do cubo for 4 unidades, a área total seria:
+            </p>
+            
+            <p>
+                Área total do cubo = 6 x (4 x 4)
+                Área total do cubo = 6 x 16
+                Área total do cubo = 96
+            </p>
+            
+            <p>
+                Portanto, a área total de um cubo com um lado de 4 unidades seria 96 unidades quadradas.
+            </p>  
+
+        </div>
+
+        <script> 
+
+            document.getElementById('submit').addEventListener('click', function (event) {
+            event.preventDefault();
+            calcularAreaCubo();
+        });
+        
+        function calcularAreaCubo(){
+           var lado =  document.getElementById('lado').value;
+
+           var area = 6 * (lado * lado);
+
+           document.getElementById('area').value = area
+
+           document.getElementById('resultado').innerText = ` A área do cubo é ${area} `;
+        }
+    
+    
+    
+    
+    </script>
+
+    
+    </main>
+</body>
+</html>

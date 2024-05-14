@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventureiros das Formas Proibidas</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+     <header>
+        
+        <div class="logo">
+            <span class="logo-text">Calculador</span>
+            <span class="logo-text">de Área</span>
+        </div>
+       
+        <div class="botao"> <a href="index.html"> Início </a> </div>
+      
+
+   
+    </header> 
+       
+    
+    <main>
+        
+
+        <div class="circuloo">
+       
+            <img class="circulo" src="img/9584c6098791a1e287bc313f7e9a2ecb.jpg" alt="">
+    
+        </div>
+
+        <div class="formulario">
+        <form>
+            <div class="form-group">
+                <label for="raio">Raio:</label>
+                <input type="text" name="base" id="raio" class="form-control">
+            </div>
+
+            <div class="form-group mt-2">
+                <button type="submit" id="submit" class="btn btn-primary">Calcular</button>
+
+            </div>
+            <div class="form-group mt-2">
+                <label for="area">Área:</label>
+                <input type="text" name="area" id="area" class="form-control" disabled>
+                <p id="resultado"></p>
+            </div>
+        </form>
+    
+    </div>
+    
+    <script> 
+
+        document.getElementById('submit').addEventListener('click', function (event) {
+               event.preventDefault();
+               calcularAreaCirculo();
+           });
+
+       function calcularAreaCirculo(){
+
+           var raio = document.getElementById('raio').value;
+           
+           const pi= 3.14
+
+           var area = pi * ( raio * raio)
+
+           document.getElementById('area').value = area;
+
+           document.getElementById('resultado').innerText = `A área do circulo é ${area}`; 
+       }
+   
+   
+   </script>
+    
+    
+    <div class="text_circulo">
+    
+        <p> 
+           
+            Um círculo é uma forma redonda que parece com uma pizza sem pedaços cortados. Imagine que você está bem no meio dessa pizza, e a crosta é a mesma distância de você em todos os lados. Essa distância é o que chamamos de raio. Então, basicamente, um círculo é uma forma onde todos os pontos estão à mesma distância do centro. A linha ao redor do círculo é chamada de circunferência, e o espaço dentro dela é a área do círculo. 
+        </p> 
+        
+        <p>
+            Para calcular a área de um círculo, usamos a fórmula:
+        </p>
+        <p>
+            A = π * r^2
+        </p>
+        
+        <p>
+            Onde:
+        </p>
+        
+        <p>
+            A é a área do círculo,
+            π é uma constante matemática que é aproximadamente igual a 3,14159 (ou pode ser arredondada para 3,14 para simplificar os cálculos),
+            r é o raio do círculo.
+            Então, para encontrar a área de um círculo, você eleva o raio ao quadrado e multiplica pelo valor de π.
+        </p>
+        
+        <p>
+            Por exemplo, se um círculo tiver um raio de 5 unidades, a sua área seria:
+        </p>
+        
+        <p>
+            A = π * 5^2
+            A = π * 25
+            A ≈ 3,14 * 25
+            A ≈ 78,5
+        </p>
+        
+        <p>
+            Portanto, a área do círculo com um raio de 5 unidades seria aproximadamente 78,5 unidades quadradas.
+        </p>
+        
+        </div>
+
+
+        </main>
+    </body>
+    </html>

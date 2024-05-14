@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventureiros das Formas Proibidas</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+     <header>
+        
+        <div class="logo">
+            <span class="logo-text">Calculador</span>
+            <span class="logo-text">de Área</span>
+        </div>
+    
+        <div class="botao"> <a href="index.html"> Início </a> </div>
+        
+    </header> 
+       
+    
+    <main>
+        <div class="romboedroo">
+            <img class="romboedro"  src="img/Rhombohedron.png" alt="">
+            </div>
+
+            <div class="formulario">
+                <form>
+                    <div class="form-group">
+                        <label for="base">Base:</label>
+                        <input type="text" name="base" id="base" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for=" altura">Altura:</label>
+                        <input type="text" name="altura" id="altura" class="form-control">
+                    </div>
+        
+                    <div class="form-group mt-2">
+                        <button type="submit" id="submit" class="btn btn-primary">Calcular</button>
+        
+                       
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="area">Área:</label>
+                        <input type="text" name="area" id="area" class="form-control" disabled>
+                        <p id="resultado"></p>
+                    </div>
+                </form>
+            
+            </div>
+
+           
+
+            <div class="text_romboedro"></div>
+            
+            <p >
+           
+                Um romboedro é uma forma tridimensional que parece um diamante ou uma pipa. Ele tem seis faces que são paralelogramos, o que significa que os lados opostos são paralelos e do mesmo comprimento, mas os ângulos podem não ser de 90 graus. Os romboedros têm dois tipos de faces: faces opostas são iguais e paralelas, e as outras duas faces também são iguais e paralelas, mas diferentes das primeiras duas. Em outras palavras, é como uma caixa onde todas as faces são losangos em vez de quadrados.
+    
+            </p>
+
+        <p>
+            Para calcular a área de um romboedro, você precisa saber a medida da base e a altura.
+        </p>
+        
+        <p>
+            A fórmula para calcular a área de um romboedro é:
+        </p>
+        
+        <p>
+            Area do romboedro = Base * Altura
+        </p>
+        
+        <p>
+            Onde:
+        </p>
+            
+        <p>
+            Base é o comprimento de um dos lados da base do romboedro.
+            Altura é a distância vertical entre a base e o lado oposto.
+            Então, para encontrar a área total do romboedro, você multiplica o comprimento da base pela altura.
+        </p>
+            
+         <p>
+            Por exemplo, se a base do romboedro for 6 unidades e a altura for 8 unidades, a área seria:
+        </p>
+            
+        <p>
+            Área do romboedro = 6 * 8 *(vezes lados (6))
+            Área do romboedro = 48 * 6 
+            Área do romboedro = 288
+        </p>
+            
+        <p>
+            Portanto, a área total do romboedro seria 48 unidades quadradas.    
+        </p>    
+    
+    
+    
+    </main>
+
+    <script> 
+            
+        document.getElementById('submit').addEventListener('click',function (event){
+            event.preventDefault();
+            calcularAreaRomboedro();
+        });
+
+
+        function calcularAreaRomboedro(){
+           
+           var altura = document.getElementById('altura').value;
+            
+           var base = document.getElementById('base').value;
+
+           var  area = 6 * (base * altura);
+
+           document.getElementById('area').value = area
+
+           document.getElementById('resultado').innerText = `A área do romboedro é ${area}`;
+
+        }
+    
+    </script>
+</body>
+</html>

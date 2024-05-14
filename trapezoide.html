@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventureiros das Formas Proibidas</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+     <header>
+        
+        <div class="logo">
+            <span class="logo-text">Calculador</span>
+            <span class="logo-text">de Área</span>
+        </div>
+    
+        <div class="botao"> <a href="index.html"> Início </a> </div>
+        
+    </header> 
+       
+    
+    <main>
+
+        <div class="trapezoidee">
+    
+            <img class="trapezoide" src="img/trapezio-escaleno-medidas-diferentes.webp" alt="">
+        </div>
+
+        <div class="formulario">
+            <form>
+                <div class="form-group">
+                    <label for="maior">Base Maior:</label>
+                    <input type="text" name="maior" id="maior" class="form-control">
+                </div>
+                
+                <div class="form-group">
+
+                    <label for=" menor"> Base Menor:</label>
+                    <input type="text" name="menor" id="menor" class="form-control">
+                </div>
+                
+                <div class="form-group">
+                    <label for=" altura">Altura:</label>
+                    <input type="text" name="altura" id="altura" class="form-control">
+                </div>
+    
+                <div class="form-group mt-2">
+                    <button type="submit" id="submit" class="btn btn-primary">Calcular</button>
+    
+                </div>
+                <div class="form-group mt-2">
+                    <label for="area">Área:</label>
+                    <input type="text" name="area" id="area" class="form-control" disabled>
+                    <p id="resultado"></p>
+                </div>
+            </form>
+        
+        </div>
+
+        <script> 
+
+            document.getElementById('submit').addEventListener('click',function(event){
+                event.preventDefault();
+                calcularAreaTrapezoide();
+            })
+
+            function calcularAreaTrapezoide() {
+             
+                var maior = parseFloat(document.getElementById('maior').value);
+                
+                var menor = parseFloat(document.getElementById('menor').value);
+               
+                var altura = parseFloat(document.getElementById('altura').value);
+                
+                var area = ((maior + menor) * altura) / 2;
+                 
+                document.getElementById('area').value = area;
+              
+                document.getElementById('resultado').innerText = `A área do trapézio é ${area}`;
+}
+        
+        </script>
+        
+        <div class="text_trapezoide"></div>
+        <p>
+            Um trapézio é uma forma bidimensional com quatro lados, onde pelo menos dois lados são paralelos. Isso significa que dois lados opostos não são paralelos, e os outros dois lados podem ter tamanhos diferentes. Visualmente, pense em um símbolo de "caixa de correio" ou na forma de uma peça de dominó. Os lados paralelos são chamados de bases, enquanto os outros dois lados são chamados de lados não paralelos ou pernas. Os trapézios podem ter ângulos retos ou ângulos não retos, dependendo da sua forma específica.
+            
+        </p>
+
+        <p>
+            Para calcular a área de um trapézio, você precisa saber o comprimento das bases e a altura.
+        </p>
+
+        <p>
+            A fórmula para calcular a área de um trapézio é:
+        </p>
+
+        <p>
+            Área do trapézio = (Base maior + Base menor) * Altura / 2
+        </p>
+
+        <p>
+            Onde:
+        </p>
+
+        <p>
+            Base maior e Base menor são os comprimentos das bases paralelas ao trapézio.
+        </p>
+            
+        <p>
+            Altura é a distância perpendicular entre as bases.
+        </p>
+            
+        <p>
+            Então, para encontrar a área total do trapézio, você soma as bases, multiplica pela altura e divide por 2.
+        </p>
+
+         <p>
+            Por exemplo, se a base maior do trapézio mede 6 unidades, a base menor 4 unidades e a altura 5 unidades, a área seria:
+        </p>
+
+        <p>
+            Área do trapézio = (6 + 4) * 5/2 Área do trapézio = (10 * 5) / 2 Área do trapézio = 50/2 Área do trapézio = 25
+        </p>
+
+        <p>
+            Portanto, a área total do trapézio seria 25 unidades quadradas.
+        </p>
+    </main>
+</body>
+</html>

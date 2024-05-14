@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+ padding: 0;
+}
+    
+.logo {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.logo-text {
+    display: block;
+}
+
+
+.logo {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.logo-text:first-child {
+    color: #009688;
+}
+
+.logo-text:last-child {
+    color: #FF5722; 
+}
+
+
+h3{
+display: flex;
+justify-content: center;
+color:#009688 ;
+margin: 20px 0px 0px 140px;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.circulo{
+    width: 300px;
+    height: 300px;
+}
+
+.text_circulo{
+    width: 300px;
+    margin: 20px 0px 0px 0px;
+    color: #FF5722;
+}
+.cubo{
+    width: 300px;
+    height: 300px;
+}
+
+.text_cubo{
+    width: 300px;
+    margin: 20px 0px 0px 0px;
+    color: #009688;
+}
+.retangulo{
+    width: 400px;
+    height: 300px;
+}
+
+.text_retangulo{
+    width: 300px;
+    color: #FF5722;
+}
+.romboedro{
+    width: 300px;
+    height: 300px;
+}
+
+.text_romboedro{
+    width: 300px;
+    margin: 10px 0px 0px 0px;
+    color: #009688;
+}
+
+.trapezoide{
+    width: 400px;
+    height: 400px;
+}
+.text_trapezoide{
+    width: 400px;
+    color: #FF5722;
+}
+
+.poligono{
+    width: 300px;
+    height: 300px;
+}
+.text_poligono{
+    width: 300px;
+    color:#FF5722;
+}
+
+.quadrado{
+    width: 250px;
+    height: 250px;
+}
+
+.text_quadrado{
+    width: 250px;
+    margin: 20px 0px 0px 0px;
+    color:#009688;
+}
+
+
+.circuloo{
+    display: flex;
+    flex-direction: column;
+    margin: 80px 80px 0px 80px;
+}
+
+.cuboo{
+    display: flex;
+    flex-direction: column;
+    margin: 80px 80px 0px 80px;
+}
+
+.poligonoo{
+    display: flex;
+    flex-direction: column;
+    margin: 80px 80px 0px 80px;
+}
+
+.quadradoo{
+    display: flex;
+    flex-direction: column;
+    margin: 80px 80px 0px 80px;
+}
+
+.retanguloo{
+    display: flex;
+    flex-direction: column;
+    margin: 80px 80px 0px 80px;
+}
+
+.romboedroo{
+    display: flex;
+    flex-direction: column;
+    margin: 80px 80px 0px 80px;
+}
+
+.trapezoidee{
+    display: flex;
+    flex-direction: column;
+    margin: 80px 80px 0px 80px;
+}
+
+a{
+    text-decoration: none;
+}
